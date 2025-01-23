@@ -16,36 +16,38 @@ This repository documents a comprehensive home lab project focused on installing
 
 In this documentation, I will outline the initial steps of setting up my Active Directory home lab. This includes downloading and preparing the essential tools: VirtualBox and Windows Server 2022.
 
-To start, we’ll download VirtualBox from the official website at https://www.virtualbox.org/wiki/Downloads. Since I’m using a Windows PC, I will be selecting the version for Windows hosts.
-
-
+Before creating a virtual environment ensure you confirm that your host computer supports virtualization and you check this information through checking your system information. A shortcut to this page is typing "msinfo" on the search tab  to open system information page. Once we have confirmed this we can now begin our set-up.
+To start, we’ll download VirtualBox from the official website at https://www.virtualbox.org/wiki/Downloads.
 
 1. <p align="left">
    <img src="https://github.com/Eunice-Kamore/Installing-VirtualBox-and-Windows-Server-2022/blob/9200c774c0a6c5e371306e49e2755f3be7c9a306/Files/Edited%20one.PNG" width="400px"/>
    <br />
    <br />
+Here, we select our options depending on the operating system that our computer is running on. For this lab we will choose Windows Hosts option because our host pc is running a Windows OS.
 
+2. <p align="left">
+   <img src="https://github.com/Eunice-Kamore/Installing-VirtualBox-and-Windows-Server-2022/blob/main/Files/Three.png?raw=true" width="400px"/>
+   <br />
+   <br />
+   
 Next, we’ll download Windows Server 2022 from the official Microsoft Evaluation Center at https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2022.
 
-2. <p align="center">
+3. <p align="left">
+   <img src="https://github.com/Eunice-Kamore/Installing-VirtualBox-and-Windows-Server-2022/blob/main/Files/Downloading%20server%202022.png?raw=true" width="400px"/>
    <br />
    <br />
 
-To access the free trial, you’ll need to provide your information during the registration process. The trial period lasts for 180 days.
+To access the free trial, you’ll need to provide your information during the registration process. The trial period lasts for 180 days. Once the trial ends Microsoft provides a command to renew the trial period.
 
-3. <p align="center">
+4. <p align="left">
+   <img src="https://github.com/Eunice-Kamore/Installing-VirtualBox-and-Windows-Server-2022/blob/main/Files/Fill%20in%20your%20details%20to%20download.png?raw=true" width="400px"/>
    <br />
    <br />
 
-After filling our information, we can finally download the ISO which will be the 64-bit edition (English). 
+After filling our information in the form, we can finally download the ISO which will be the 64-bit edition (English). Clicking on the link shown your download will begin and you can locate it within your downloads folder.
 
-4. <p align="center">
-   <br />
-   <br />
-
-Finally our ISO download should appear in our downloads folder. 
-
-5. <p align="center">
+5. <p align="left">
+   <img src="https://github.com/Eunice-Kamore/Installing-VirtualBox-and-Windows-Server-2022/blob/main/Files/After%20completing%20your%20details%20click%20download%20now%20and%20come%20to%20this%20page,click%20on%20the%2064%20bit%20link%20and%20your%20download%20will%20begin.png?raw=true" width="400px"/>
    <br />
    <br />
 
