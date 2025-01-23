@@ -1,20 +1,20 @@
 <H1>Overview: Lab 1 Installing VirtualBox and Server 2022</H1>
 
-Welcome to the first lab of my home lab series! This section of my home lab documentation focuses on the process of **installing VirtualBox** and setting up a **Windows Server 2022** virtual machine within the VirtualBox environment. It outlines the steps for downloading and installing **VirtualBox**, followed by the creation of a virtual machine to host **Windows Server 2022**. The project also covers the configuration of basic server settings and prepares the server for further roles, such as Active Directory and domain controller setup. This task serves as the foundation for building a virtualized lab environment that mimics real-world IT infrastructure, ideal for practicing administrative tasks and learning server management techniques.
+Welcome to the first lab of my home lab series! This section of my home lab documents the process of **Installing VirtualBox** and setting up a **Windows Server 2022** virtual machine within the VirtualBox. It outlines the steps for downloading and installing **VirtualBox**, followed by the creation of a virtual machine to host **Windows Server 2022**. This task serves as the foundation for building a virtualized lab environment that mimics real-world IT infrastructure, ideal for practicing administrative tasks and learning server management techniques.
 
 <H2>Objectives</H2>
 
 This repository documents a comprehensive home lab project focused on installing and configuring VirtualBox and Windows Server 2022. The key objectives include:
 
-- Demonstrating the setup and installation process of VirtualBox as a virtualization platform.
+- Demonstrating the setup and installation process of VirtualBox as a virtualization platform formally known as a hypervisor.
 - Installing and configuring Windows Server 2022 in a virtualized environment.
-- Creating a foundation for further experiments involving Active Directory, system administration, and IT operations.
+- Creating a platform for further experiments involving System Administration, Active Directory and Group Policy Configurations.
 
 
 
 <H2>Documentation</H2>
 
-In this documentation, I will outline the initial steps of setting up my Active Directory home lab. This includes downloading and preparing the essential tools: VirtualBox and Windows Server 2022.
+In this documentation, I will outline the initial steps of setting up my home lab. This includes downloading and preparing the essential tools: VirtualBox and Windows Server 2022.
 
 Before creating a virtual environment ensure you confirm that your host computer supports virtualization and you check this information through checking your system information. A shortcut to this page is typing "msinfo" on the search tab  to open system information page. Once we have confirmed this we can now begin our set-up.
 To start, we’ll download VirtualBox from the official website at https://www.virtualbox.org/wiki/Downloads.
@@ -54,105 +54,101 @@ After filling our information in the form, we can finally download the ISO which
 After everything has finished downloading, we can launch VirtualBox and begin configuring the settings for Windows Server 2022. Once VirtualBox is open, navigate to the "Machine" tab at the top and select "New" to create a new virtual machine.
 
 6. <p align="center">
+   <img src="https://github.com/Eunice-Kamore/Installing-VirtualBox-and-Windows-Server-2022/blob/main/Files/1-creating%20a%20vm.png?raw=true" width="400px" />
    <br />
    <br />
 
-First, we’ll name our virtual machine "Windows Server 2022 Lab." Next, we’ll locate the ISO image in our Downloads folder. To do this, click the dropdown menu under "ISO Image" and select "Other." From there, we can browse to the Downloads folder and select the Windows Server ISO.
+First, we’ll name our virtual machine "Server 2022". Next, we’ll locate the ISO image in our Downloads folder. To do this, click the dropdown menu under "ISO Image" and select "Other." From there, we can browse to the Downloads folder and select the Windows Server ISO that we downloaded earlier.
 
-7. <p align="center">
+7. <p align="left">
+   <img src="https://github.com/Eunice-Kamore/Installing-VirtualBox-and-Windows-Server-2022/blob/main/Files/Step2.png?raw=true" width="400px" />
+   <br />
+   <br />
+After renaming the server and mounting the ISO image. Tick the "Skip Unattended Installation" box so you set the hardware configurations yourself depending on the capacity of resources you have on your host machine.
+
+8. <p align="left">
+   <img src="https://github.com/Eunice-Kamore/Installing-VirtualBox-and-Windows-Server-2022/blob/main/Files/Step2.1.png?raw=true" width="400px" />
+   <br />
+   <br />
+By default, the base memory is set to 2048 MB, which should be sufficient for running the virtual machine. However, since our computer has 16 GB of RAM, we can allocate around 4 GB for our virtual machine. We will ramp up the CPU to 2 since our host has 8 CPUs.  As long you remain in the green region you are safe, except you do not want to allocate too much which might slow down your host PC.
+9. <p align="left">
+   <img src="https://github.com/Eunice-Kamore/Installing-VirtualBox-and-Windows-Server-2022/blob/main/Files/Step3.1.png?raw=true" width="400px" />
    <br />
    <br />
 
-8. <p align="center">
-   <br />
-   <br />
-
-
-9. <p align="center">
-   <br />
-   <br />
-
-Next, click on "Skip Unattended Installation." Then, proceed to configure the hardware settings for the virtual machine.
-
-
-10. <p align="center">
+Next, we will configure hadrdisk settings. It all depends with the storage available in your host computer. We will stick with the 50GB allocated. Once finished, click finish.
+10. <p align="left">
+    <img src="https://github.com/Eunice-Kamore/Installing-VirtualBox-and-Windows-Server-2022/blob/main/Files/Step3.2.png?raw=true" width="400px" />
+    <br />
+    <br />
+    
+Now the virtual machine set up is complete. Click on the "Start" button to start the installation for our Windows Server 2022 on the VM. When the next screen appears,choose your languages and click "Next" which takes you to the next screen and click on the "Install" button.
+11. <p align="left">
+    <img src="https://github.com/Eunice-Kamore/Installing-VirtualBox-and-Windows-Server-2022/blob/main/Files/Step4y.PNG?raw=true" width="400px" />
+    <br />
+    <br />
+12. <p align="left">
+    <img src="https://github.com/Eunice-Kamore/Installing-VirtualBox-and-Windows-Server-2022/blob/main/Files/Step5.png?raw=true" width="400px" />
+    <br />
+    <br />
+13. <p align="left">
+    <img src="https://github.com/Eunice-Kamore/Installing-VirtualBox-and-Windows-Server-2022/blob/main/Files/Step6.png?raw=true" width="400px" />
     <br />
     <br />
 
-By default, the base memory is set to 2048 MB, which should be sufficient for running the virtual machine. However, since our computer has 32 GB of RAM, we can allocate around 6 GB (or 6081 MB) for our virtual machine home lab. To check how much RAM your PC has, you can either search for "About your PC" or open Task Manager and navigate to the "Performance" tab, where the total RAM will be displayed.
+Then in the next screen, choose "Windows Server 2022 Standard Evaluation (Desktop Experience)," then click "Next" to continue.
 
-11. <p align="center">
+14. <p align="left">
+    <img src="https://github.com/Eunice-Kamore/Installing-VirtualBox-and-Windows-Server-2022/blob/main/Files/Step7.png?raw=true" width="400px" />
     <br />
     <br />
 
+Accept the terms and click "Next." In the next step, when prompted to choose the type of installation, select "Custom" to proceed because its a fresh installation and not an upgrade.
 
-
-12. <p align="center">
+15. <p align="left">
+    <img src="https://github.com/Eunice-Kamore/Installing-VirtualBox-and-Windows-Server-2022/blob/main/Files/Step8.png?raw=true" width="400px" />
     <br />
     <br />
 
-For the “Hard disk” configurations everything should be good, just make sure we have “Create a Virtual Hard Disk Now” then click “Finish”. 
-
-13. <p align="center">
-    <br />
-    <br />
-
-Now, we’ll boot up the virtual machine by clicking the "Start" button. A prompt for the Microsoft Server Operating System Setup will appear. Click "Next," then select "Install Now" to begin the installation process.
-
-14. <p align="center">
-    <br />
-    <br />
-
-
-15. <p align="center">
-    <br />
-    <br />
-
-In the operating system selection screen, choose "Windows Server 2022 Standard Evaluation (Desktop Experience)," then click "Next" to continue.
-
-16. <p align="center">
-    <br />
-    <br />
-
-Accept the terms and click "Next." In the next step, when prompted to choose the type of installation, select "Custom" to proceed.
-
-17. <p align="center">
-    <br />
-    <br />
-
-
-18. <p align="center">
+    
+16. <p align="left">
+    <img src="https://github.com/Eunice-Kamore/Installing-VirtualBox-and-Windows-Server-2022/blob/main/Files/Step9.png?raw=true" width="400px" />
     <br />
     <br />
 
 Click "Next," and the installation of Windows Server will begin.
 
-19. <p align="center">
+17. <p align="left">
+    <img src="https://github.com/Eunice-Kamore/Installing-VirtualBox-and-Windows-Server-2022/blob/main/Files/Step10.png?raw=true" width="400px" />
     <br />
     <br />
 
-20. <p align="center">
+18. <p align="left">
+    <img src="https://github.com/Eunice-Kamore/Installing-VirtualBox-and-Windows-Server-2022/blob/main/Files/Step11.png?raw=true" width="400px" />
     <br />
     <br />
 
-Create a password for our account “Administrator”.
+Create a password for our “Administrator” account and click "Finish".
 
-21. <p align="center">
+19. <p align="left">
+    <img src="https://github.com/Eunice-Kamore/Installing-VirtualBox-and-Windows-Server-2022/blob/main/Files/Step12.png?raw=true" width="400px" />
     <br />
     <br />
 
-Click on "Input" and select "Insert Ctrl + Alt + Del" to bring up the login screen. After entering your password, you can log into your Windows Server 2022 account as the administrator.
+Type Ctrl + Alt + Del to bring up the log on screen. Alternatively at the top menu you can click on "Input" and select "Keyboard" and choose "Insert Ctrl + Alt + Del". After logging in the server manager launches on start up.
 
-22. <p align="center">
+20. <p align="left">
+    <img src="https://github.com/Eunice-Kamore/Installing-VirtualBox-and-Windows-Server-2022/blob/main/Files/Step13.png?raw=true" width="400px" />
     <br />
     <br />
 
-23. <p align="center">
+21. <p align="left">
+    <img src="https://github.com/Eunice-Kamore/Installing-VirtualBox-and-Windows-Server-2022/blob/main/Files/Step14.png?raw=true" width="400px" />
     <br />
     <br />
 
 
-Congratulations we have now successfully installed Windows Server 2022 and Virtual Box!
+Well done!! Successfully created our virtualized environment with Virtual Box and installed Server 2022 on our Virtual Machine.
 
  👉 [Next Lab 2 : Renaming Windows Server 2022 and Installing Active Directory](https://github.com/Simokid/Renaming-Server-2022-and-Installing-Active-Directory/tree/main)
 
