@@ -21,7 +21,7 @@ To start, we’ll download VirtualBox from the official website at https://www.v
 
 
 1. <p align="center">
-   ![Image](https://github.com/user-attachments/assets/02b2f7ae-21fa-4a80-aa25-80ef695ac039)
+   <![Image](https://github.com/user-attachments/assets/02b2f7ae-21fa-4a80-aa25-80ef695ac039) />
    <br />
    <br />
 
