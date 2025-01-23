@@ -21,7 +21,7 @@ To start, we’ll download VirtualBox from the official website at https://www.v
 
 
 1. <p align="center">
-   <![Image](https://github.com/user-attachments/assets/02b2f7ae-21fa-4a80-aa25-80ef695ac039) />
+   <img src="https://github.com/Eunice-Kamore/Installing-VirtualBox-and-Windows-Server-2022/blob/9200c774c0a6c5e371306e49e2755f3be7c9a306/Files/Edited%20one.PNG" width="300px"/>
    <br />
    <br />
 
