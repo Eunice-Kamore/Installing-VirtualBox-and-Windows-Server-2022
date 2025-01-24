@@ -150,7 +150,7 @@ Type Ctrl + Alt + Del to bring up the log on screen. Alternatively at the top me
 
 Well done!! Successfully created our virtualized environment with Virtual Box and installed Server 2022 on our Virtual Machine.
 
- 👉 [Next Lab 2 : Renaming Windows Server 2022 and Installing Active Directory](https://github.com/Simokid/Renaming-Server-2022-and-Installing-Active-Directory/tree/main)
+ 👉 [Next Lab 2 : Renaming Windows Server 2022 and Installing Active Directory Domain Services](github.com/Simokid/Renaming-Server-2022-and-Installing-Active-Directory/tree/main)
 
 
 
